@@ -7,5 +7,134 @@
     <link rel="stylesheet" href="./sass/style.css" />
     <script src="script.js" defer></script>
   </head>
-  <body></body>
+  <body>
+    <div class="hangmanContainer">
+      <div class="hangmanContainer__titleBox">
+        <h1 class="title">Hangman</h1>
+        <small class="description"
+          >Find the hidden word - Enter a letter
+        </small>
+      </div>
+      <div class="hangmanContainer__characterBox">
+        <div id="character">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 100 100"
+            width="200"
+            height="200"
+          >
+            <!-- Hangman Base -->
+            <line
+              x1="10"
+              y1="90"
+              x2="90"
+              y2="90"
+              stroke="black"
+              stroke-width="4"
+            />
+
+            <!-- Vertical Post -->
+            <line
+              x1="30"
+              y1="90"
+              x2="30"
+              y2="10"
+              stroke="black"
+              stroke-width="4"
+            />
+
+            <!-- Horizontal Beam -->
+            <line
+              x1="30"
+              y1="10"
+              x2="60"
+              y2="10"
+              stroke="black"
+              stroke-width="4"
+            />
+
+            <!-- Rope -->
+            <line
+              x1="60"
+              y1="10"
+              x2="60"
+              y2="20"
+              stroke="black"
+              stroke-width="2"
+            />
+
+            <!-- Head -->
+            <circle
+              cx="60"
+              cy="30"
+              r="10"
+              stroke="black"
+              stroke-width="2"
+              fill="transparent"
+            />
+
+            <!-- Body -->
+            <line
+              x1="60"
+              y1="40"
+              x2="60"
+              y2="60"
+              stroke="black"
+              stroke-width="2"
+            />
+
+            <!-- Left Arm -->
+            <line
+              x1="60"
+              y1="45"
+              x2="50"
+              y2="55"
+              stroke="black"
+              stroke-width="2"
+            />
+
+            <!-- Right Arm -->
+            <line
+              x1="60"
+              y1="45"
+              x2="70"
+              y2="55"
+              stroke="black"
+              stroke-width="2"
+            />
+
+            <!-- Left Leg -->
+            <line
+              x1="60"
+              y1="60"
+              x2="50"
+              y2="70"
+              stroke="black"
+              stroke-width="2"
+            />
+
+            <!-- Right Leg -->
+            <line
+              x1="60"
+              y1="60"
+              x2="70"
+              y2="70"
+              stroke="black"
+              stroke-width="2"
+            />
+          </svg>
+        </div>
+        <div class="wrongBox">
+          <span>Wrong</span>
+          <span id="wrong">b</span>
+        </div>
+      </div>
+      <div class="hangmanContainer__wordBox">
+        <div class="singleCharacter">
+          <span class="letter">a</span>
+          <span class="underscore">__________</span>
+        </div>
+      </div>
+    </div>
+  </body>
 </html>

@@ -1,0 +1,92 @@
+*,
+::after,
+::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+  color: white;
+}
+
+body {
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  background-color: #34495e;
+}
+
+.hangmanContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  > * {
+    margin: 1rem;
+  }
+
+  & > &__titleBox {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 1rem;
+    > .title {
+      font-size: 6rem;
+    }
+    > .description {
+      font-size: 1.5rem;
+    }
+  }
+
+  & > &__characterBox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    > #character {
+    }
+    > .wrongBox {
+      display: flex;
+      flex-direction: column;
+      span {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 2rem;
+      }
+
+      #wrong {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 1.5rem;
+        color: red;
+      }
+    }
+  }
+
+  & > &__wordBox {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    > .singleCharacter {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+
+      > .letter {
+        font-size: 2.5rem;
+        color: green;
+      }
+      > .underscore {
+        font-size: 0.5rem;
+      }
+    }
+  }
+}

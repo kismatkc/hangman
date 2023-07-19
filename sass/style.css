@@ -1,0 +1,86 @@
+*,
+::after,
+::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+  color: white;
+}
+
+body {
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  background-color: #34495e;
+}
+
+.hangmanContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.hangmanContainer > * {
+  margin: 1rem;
+}
+.hangmanContainer > .hangmanContainer__titleBox {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  row-gap: 1rem;
+}
+.hangmanContainer > .hangmanContainer__titleBox > .title {
+  font-size: 6rem;
+}
+.hangmanContainer > .hangmanContainer__titleBox > .description {
+  font-size: 1.5rem;
+}
+.hangmanContainer > .hangmanContainer__characterBox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.hangmanContainer > .hangmanContainer__characterBox > .wrongBox {
+  display: flex;
+  flex-direction: column;
+}
+.hangmanContainer > .hangmanContainer__characterBox > .wrongBox span {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+}
+.hangmanContainer > .hangmanContainer__characterBox > .wrongBox #wrong {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5rem;
+  color: red;
+}
+.hangmanContainer > .hangmanContainer__wordBox {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.hangmanContainer > .hangmanContainer__wordBox > .singleCharacter {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.hangmanContainer > .hangmanContainer__wordBox > .singleCharacter > .letter {
+  font-size: 2.5rem;
+  color: green;
+}
+.hangmanContainer > .hangmanContainer__wordBox > .singleCharacter > .underscore {
+  font-size: 0.5rem;
+}
+
+/*# sourceMappingURL=style.css.map */
